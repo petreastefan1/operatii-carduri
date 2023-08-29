@@ -1,130 +1,53 @@
-* {
-    box-sizing: border-box;
-    margin:0px;
+.card-container{
+
+
+     display: grid;
+
+
+     width: 60%;
+
+     margin: auto;
+     
+     grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+
+     grid-gap: 20px;
+
+}
+
+.card{
+
+    width: 100%;
 }
 
 input[type=text]{
-    width:200px;
-    height:50px;
-    font-size: 25px;
-    border-radius: 10px;
-    outline-style: none;
-    border-style: 1px solid black;
-}
-input[type=text]:hover{
-    border:3px solid rgb(35, 89, 136);
-}
-body {
-    background-color: bisque;
-    font-size: 30px;
+    width:250px
 }
 
-main{
+.forms-container{
     display:flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top:50px;
-    
-}
-.page-container{
-    display:grid;
-    grid-template-columns: 300px 300px 300px 100px;
-    grid-template-rows: 100px 100px;
-    grid-template-areas:
-    "brand-inpt model-inpt year-inpt button"
-    "brand-head model-head year-head ."
-    "table-section table-section table-section .";
-    background-color: rgb(93, 141, 184);
-    justify-self:center;
-    align-self: center;
-}
-.add-items{
-    display:flex;
-    flex-direction: column;
-}
-
-.brand-container{
-    grid-area:brand-inpt;
-    justify-self:center;
-}
-
-.model-container{
-    grid-area:model-inpt;
-    justify-self:center;
-}
-
-.year-container{
-    grid-area:year-inpt;
-    justify-self:center;
-}
-
-.brand-title{
-    grid-area:brand-head;
-    justify-self:center;
-    align-self: center;
-
-}
-
-.model-title{
-    grid-area:model-head;
-    justify-self:center;
-    align-self: center;
-
-}
-
-.year-title{
-    grid-area:year-head;
-    justify-self:center;
-    align-self: center;
-
-}
-
-.underline-border{
-    padding-left: 8px;
-    padding-right: 8px;
-    border-bottom: 3px solid white;
-    border-radius: 10px;
-}
-
-.table-border{
-    border:3px solid #f3f3f3;
-    justify-self:stretch;
-    align-self: stretch;
-    text-align: center;
-    width:250px;
-    height:50px;
-    padding-top: 5px;
-    text-align: center;
-
-}
-
-
-.test{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgb(93, 141, 184);
-    align-self:center ;
     gap:50px;
-    text-align:center;
-    flex-wrap: wrap;
+    margin-bottom:50px;
+    justify-content: center;
 }
 
-.add-btn{
-    grid-area: button;
-    align-self: center;
-    justify-self: center;
+.header-size{
+    font-size: 25px;
+}
+
+.btn-add{
     height:50px;
-    width:100px;
-    margin-top: 20px;
-    border-radius: 10px;
-    font-size: 20px;
+    align-self: flex-end;
 }
 
-.add-btn:hover{
-    background-color: rgb(190, 197, 204);
+.alerts{  
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;  
 }
 
-.table-container{
-    grid-area: table-section;
+.alerts *{
+    width: 30%;
+    align-self: flex-end;
+
 }
+
