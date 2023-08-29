@@ -30,20 +30,24 @@ input[type=text]{
     justify-content: center;
 }
 
+.header-size{
+    font-size: 25px;
+}
+
 .btn-add{
     height:50px;
     align-self: flex-end;
 }
 
-.alerts{
-   
+.alerts{  
     display: flex;
     flex-direction: column;
-
-   
+    font-size: 15px;  
 }
 
 .alerts *{
     width: 30%;
     align-self: flex-end;
+
 }
+
